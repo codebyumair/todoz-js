@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Umair Sheikh" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Todoz</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <div class="loader">
+      <figure>
+        <img src="assets/loader.gif" alt="" />
+        <figcaption>Todoz</figcaption>
+      </figure>
+    </div>
+    <header class="header">
+      <h1 id="greeting"></h1>
+      <div class="time-stamp">
+        <h4 id="time"></h4>
+        <h4 id="fullDate">
+          <span id="date"></span> <span id="day"></span> <span id="year"></span>
+        </h4>
+      </div>
+    </header>
+    <div class="select">
+      <select name="todos" id="" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
+    <div id="error-msg"></div>
+    <section class="todo-container" id="todo-container">
+      <ul class="todo-list" id="todo-list"></ul>
+    </section>
+    <section class="add-todo">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="Add your new task"
+      />
+      <button class="add-btn" id="add-btn" type="submit">
+        <i class="fas fa-plus"></i>
+      </button>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
